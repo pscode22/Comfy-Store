@@ -1,4 +1,4 @@
-# Comfy-Store (E-commerce Website)
+# Comfy-Store (JS Project)
 
 Credit :- https://www.vanillajavascriptprojects.com
 

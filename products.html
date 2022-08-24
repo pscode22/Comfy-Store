@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <!-- font-awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css_links/products.css">
+    <script src="JavaScript/store.js" defer></script>
+    <script src="JavaScript/products.js" defer></script>
+ </head>
+
+ <body>
+    <div class="header">
+        <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-link">
+            <button class="nav-close">x</button>
+            <ul style="list-style: none;">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <div class="header-btns"> 
+            <button class="hBtn"><a href="home.html">Home</a></button>
+            <button class="hBtn"><a href="products.html">Products</a></button>
+            <button class="hBtn"><a href="about.html">About</a></button>
+        </div>
+
+        <div class="logo"> 
+            <img src="imgs/logo-black.svg" alt="product-imagecomfy logo">
+        </div>
+        
+        <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+
+        <span class="items-count">0</span>
+    </div>
+
+    <section class="page-hero">
+        <h3 class="page-hero-title">Home / Products</h3>
+    </section>
+
+    <div class="cart_container">
+
+        <aside class="sideBar">
+                    
+            <button class="closeBtn">
+                <span>X</span>
+            </button>
+
+            <div class="checkoutSection">
+
+                <h3>Your Bag</h3>
+
+                <div class="cart-items">
+
+                    <!-- <div class="item-in">
+                        
+                        <img src="imgs/Products/p1.jpg" alt="" class="item-img">
+        
+                        <div class="item-detail">
+                            <p>
+                                <span class="itemName">High-Back Bench</span>
+                                <br>
+                                <span class="itemPrice">$9.99</span>
+                                <button class="remove-item">
+                                    <i class="fas fa-minus-circle"></i>
+                                    
+                                </button>
+                            </p>
+                        </div>
+
+                        <div>
+                            <button class="cart-item-increase-btn" data-id="rec43w3ipXvP28vog">
+                              <i class="fas fa-chevron-up"></i>
+                            </button>
+                            <p class="cart-item-amount" data-id="rec43w3ipXvP28vog">1</p>
+                            <button class="cart-item-decrease-btn" data-id="rec43w3ipXvP28vog">
+                              <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+        
+                    </div> -->
+
+                </div>
+
+                <div class="csfooter">
+                    <h3 class="total">Total : $<span class="amount">0.00</h3>
+                    <button class="csfooter-btn">CHECKOUT</button>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+   <!-- <i class="fas fa-trash"></i> -->
+    <!-- products -->
+    <section class="products">
+
+        <!-- filters -->
+        <div class="filters-container">
+            <div class="filters">
+    
+                <!-- form -->
+                <form class="input-form">
+                    <input type="text" class="search-input" placeholder="Search...">
+                </form>
+
+                <h4>Company</h4>
+
+                <article class="companies"> 
+                    <button class="company-btn">all</button>
+                    <button class="company-btn">ikea</button> 
+                    <button class="company-btn">marcos</button> 
+                    <button class="company-btn">caressa</button> 
+                    <button class="company-btn">liddy</button>
+                </article>
+
+                <h4>Price</h4>
+
+                <input type="range" class="price-filter" min="0" value="50" max="80">
+
+                <p class="p">Value : $<span class="price-value">80</span></p>
+    
+            </div>
+        </div>
+
+        <!---- products-container ---->
+        <div class="products-container">
+            
+            <div id="0" class="product" data-company-name="ikea">
+                <img src="imgs/Products/p1.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="1">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">High-Back Bench</p>
+              <h4 class="product-price">$9.99</h4>
+
+            </div>
+
+            <div id="1" class="product"  data-company-name="marcos">
+                <img src="imgs/Products/p2.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="2">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Albany Table</p>
+              <h4 class="product-price">$79.99</h4>
+
+            </div>
+
+            <div id="2" class="product" data-company-name="caressa">
+                <img src="imgs/Products/p3.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn " data-id="3">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Accent Chair</p>
+              <h4 class="product-price">$25.99</h4>
+
+            </div>
+            
+            <div id="3" class="product" data-company-name="caressa">
+                <img src="imgs/Products/p4.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="4">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Wooden Table</p>
+              <h4 class="product-price">$45.99</h4>
+
+            </div>
+
+            <div id="4" class="product" data-company-name="caressa">
+                <img src="imgs/Products/p5.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="5">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Dining Table</p>
+              <h4 class="product-price">$6.99</h4>
+
+            </div>
+
+            <div id="5" class="product" data-company-name="liddy">
+                <img src="imgs/Products/p6.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="6">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Sofa Set</p>
+              <h4 class="product-price">$69.99</h4>
+
+            </div>
+
+            <div id="6" class="product" data-company-name="marcos">
+                <img src="imgs/Products/p7.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="7">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Modern Bookshelf</p>
+              <h4 class="product-price">$8.99</h4>
+
+            </div>
+
+            <div id="7" class="product" data-company-name="liddy">
+                <img src="imgs/Products/p8.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="8">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Emperor Bed</p>
+              <h4 class="product-price">$21.99</h4>
+
+            </div>
+
+            <div id="8" class="product" data-company-name="marcos">
+                <img src="imgs/Products/p9.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="9">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Utopia Sofa</p>
+              <h4 class="product-price">$39.95</h4>
+
+            </div>
+
+            <div id="9" class="product" data-company-name="liddy">
+                <img src="imgs/Products/p10.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="10">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Entertainment Center</p>
+              <h4 class="product-price">$29.98</h4>
+
+            </div>
+
+            <div id="10" class="product" data-company-name="ikea">
+                <img src="imgs/Products/p11.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="11">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Albany Sectional</p>
+              <h4 class="product-price">$10.99</h4>
+
+            </div>
+
+            <div id="11" class="product" data-company-name="liddy">
+                <img src="imgs/Products/p12.jpg" alt="product-image" >
+
+                <div class="product-icons">
+                   <a href="info.html" class="product-icon">
+                     <i class="fas fa-search"></i>
+                   </a>
+                   <button class="product-cart-btn" data-id="12">
+                     <i class="fas fa-shopping-cart"></i>
+                   </button>
+                </div>
+
+              <p class="product-name">Microfiber Sofa</p>
+              <h4 class="product-price">$49.99</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Page Loading -->
+    <div class="page-loading" style="display: none;">
+      <h2>Loading...</h2>
+    </div>
+
+  </body>
+
+</html>

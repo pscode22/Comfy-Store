@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <!-- font-awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css_links/home.css">
+    <script src="JavaScript/store.js" defer></script>
+</head>
+
+<body>
+    
+    <div class="welcomePage">
+
+        <div class="header">
+            <button class="toggle-nav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-link">
+                <button class="nav-close">x</button>
+                <ul style="list-style: none;">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="header-btns"> 
+                <button class="hBtn"><a href="home.html">Home</a></button>
+                <button class="hBtn"><a href="products.html">Products</a></button>
+                <button class="hBtn"><a href="about.html">About</a></button>
+            </div>
+
+            <div class="logo"> 
+                <img src="imgs/logo-white.svg" alt="product-imagecomfy logo">
+            </div>
+            
+            <button class="toggle-cart">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+
+            <span class="items-count">0</span>
+        </div>
+        
+        <section class="contents">
+
+            <div class="hero-container">
+                <h1>Rest, Relax, Unwind</h1>
+                <p>Embrace your choices - we do</p> 
+                <a href="products.html" class="showNow-btn">SHOW NOW</a>
+            </div>
+
+            <div class="cart_container">
+
+                <aside class="sideBar">
+                    
+                    <button class="closeBtn">
+                        <span>X</span>
+                    </button>
+
+                    <div class="checkoutSection">
+
+                        <h3>Your Bag</h3>
+
+                        <div class="cart-items">
+
+                            <!-- <div class="item-in">
+                                
+                                <img src="imgs/Products/p1.jpg" alt="Item-Image" class="item-img">
+                
+                                <div class="item-detail">
+                                    <p>
+                                        <span class="itemName">High-Back Bench</span>
+                                        <br>
+                                        <span class="itemPrice">$9.99</span>
+                                        <button class="remove-item">
+                                            <i class="fas fa-minus-circle"></i>
+                                        </button>
+                                    </p>
+                                </div>
+        
+                                <div>
+                                    <button class="cart-item-increase-btn" data-id="rec43w3ipXvP28vog">
+                                      <i class="fas fa-chevron-up"></i>
+                                    </button>
+                                    <p class="cart-item-amount" data-id="rec43w3ipXvP28vog">1</p>
+                                    <button class="cart-item-decrease-btn" data-id="rec43w3ipXvP28vog">
+                                      <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                
+                            </div> -->
+        
+                        </div>
+
+                        <div class="csfooter">
+                            <h3 class="total">Total : $<span class="amount">0.00</span></h3>
+                            <button class="csfooter-btn">CHECKOUT</button>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <div class="featured-section">
+            <h2 class="heading"><span style="color: #ba5d2c;">/</span> Featured</h2>
+
+            <div class="features">
+
+                <div id="p1" class="products" data-company-name="ikea">
+                   <img src="imgs/Products/p1.jpg" alt="product-image" >
+  
+                   <div class="product-icons">
+                      <a href="info.html" class="product-icon">
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <button class="product-cart-btn" data-id="1">
+                        <i class="fas fa-shopping-cart"></i>
+                      </button>
+                   </div>
+
+                 <p class="product-name">High-Back Bench</p>
+                 <h4 class="product-price">$9.99</h4>
+
+                </div> 
+
+                <div id="p2" class="products" data-company-name="marcos">
+                    <img src="imgs/Products/p9.jpg" alt="product-image">
+                    
+                    <div class="product-icons">
+                        <a href="info.html" class="product-icon">
+                          <i class="fas fa-search"></i>
+                        </a>
+                        <button class="product-cart-btn" data-id="1">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+
+                    <p class="product-name">Utopia Sofa</p>
+                    <h4 class="product-price">$39.95</h4>
+                </div>
+                
+                
+                <div id="p3" class="products" data-company-name="liddy">
+                    <img src="imgs/Products/p10.jpg" alt="product-image">
+
+                    <div class="product-icons">
+                        <a href="info.html" class="product-icon">
+                          <i class="fas fa-search"></i>
+                        </a>
+                        <button class="product-cart-btn" data-id="1">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+
+                    <p class="product-name">Entertainment Center</p>
+                    <h4 class="product-price">$29.98</h4>
+                </div> 
+
+            </div>
+
+            <a href="products.html" class="nxtBtn">ALL PRODUCTS</a>
+
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
